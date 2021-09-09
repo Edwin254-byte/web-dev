@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color:dimgray;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>credential form</title>
+</head>
+<body>
+    <form style="background-color: aqua; width: max-content; height: max-content;">
+        <h1>html basic form features</h1>
+        <br>
+        <h4>text input</h4>
+        NAME: <input type="text" name="usr_name" value="e.g. john" size="10" maxlength="10">
+        PASSWORD: <input type="password" name="usr_pass" size="5">
+
+        <h4>check boxes</h4> <!--name should be different to allow the user select more than one boxes-->
+        <h4>what are your favorite teams</h4>
+        <input type="checkbox" name="man-city" value="man-city" checked> man-city
+        <input type="checkbox" name="chelsea" value="chelsea"> chelsea
+        <input type="checkbox" name="liverpool" value="liverpool"> liverpool
+
+        <h4>radio boxes</h4> <!--name should be the same to force the user select only one choice-->
+        <h4>whats your gender</h4>
+        <input type="checkbox" name="gender" value="male"> male
+        <input type="checkbox" name="gender" value="female"> female
+        <input type="checkbox" name="gender" value="transgender"> transgender
+
+        <h4>select box dropdown</h4> <!--default template of select box is dropdown-->
+        <h4>marital status</h4>
+        <select name="my_box" id="box001"> 
+            <option value="married">married</option>
+            <option value="single">single</option>
+            <option value="divorced">divorced</option>
+            <option value="widow">widow(er)</option>
+        </select>
+        <br>
+        <h4>select box scroll</h4>
+        <h4>marital status</h4>
+        <select name="my_box" id="box002" size="4" multiple> 
+            <option value="married">married</option>
+            <option value="single">single</option>
+            <option value="divorced">divorced</option>
+            <option value="widow">widow</option>
+            <option value="widower">widower</option>
+        </select>
+
+        <h4>user text area for writing</h4>
+        <textarea name="" id="" cols="40" rows="10">
+            #some python code 
+            x=4
+            y=20
+            print(x+y)
+            output: 24
+        </textarea>
+
+
+    </form>
+    <h1>2nd form illustratting hidden and button elements in forms.</h1>
+    <form method="get|post" action="jquery.html" style="background-color: lawngreen; width: fit-content; height: fit-content;" >
+        <h4>buttons and hidden </h4>
+        NAME: <input type="text" name="usr_name" value="e.g. edu" size="10" maxlength="20">
+        PASSWORD: <input type="password" name="usr_pass" minlength="5" size="6">
+        <br><br>
+
+        <input type="button" value="say hello" onclick="alert('hello')" name="b_alert"><br>
+        <input type="button" value="go to jquery" name="b_submit"><br>
+        <input type="button" value="Reset" name="reset"><br>
+        <input type="hidden" name="h_data" value="html tutorial">
+    </form>
+</body>
+</html>
